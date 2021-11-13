@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".Activity1">
+    tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvAbout"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:background="@color/black"
@@ -21,19 +21,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/toSecond"
+        android:id="@+id/bnToSecond"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:textSize="30sp"
         android:text="@string/to_second"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAbout" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
+        android:id="@+id/nav_view"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:foregroundGravity="center"

@@ -14,14 +14,15 @@ class Activity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = Activity2Binding.inflate(layoutInflater)
-        binding.toFirst.setOnClickListener { toFirstClick() }
-        binding.toThird.setOnClickListener { toThirdClick() }
-        binding.bottomNavigation.setOnNavigationItemSelectedListener { onNavAboutClicked(it) }
+        binding.bnToFirst.setOnClickListener { toFirstClick() }
+        binding.bnToThird.setOnClickListener { toThirdClick() }
+        binding.navView.setOnNavigationItemSelectedListener { onNavAboutClicked(it) }
         setContentView(binding.root)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     private fun toFirstClick(){
-        startActivity(Intent(this, Activity1::class.java).setFlags(FLAG_ACTIVITY_CLEAR_TOP))
+        startActivity(Intent(this, MainActivity::class.java).setFlags(FLAG_ACTIVITY_CLEAR_TOP))
     }
 
     private fun toThirdClick(){

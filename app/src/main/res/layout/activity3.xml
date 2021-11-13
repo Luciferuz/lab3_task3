@@ -8,7 +8,7 @@
     tools:context=".Activity3">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvAbout"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:background="@color/black"
@@ -21,31 +21,31 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/toFirst"
+        android:id="@+id/bnToFirst"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:textColor="@color/black"
         android:text="@string/to_first"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/toSecond"
+        app:layout_constraintBottom_toTopOf="@+id/bnToSecond"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAbout" />
 
     <Button
-        android:id="@+id/toSecond"
+        android:id="@+id/bnToSecond"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:text="@string/to_second"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toFirst" />
+        app:layout_constraintTop_toBottomOf="@+id/bnToFirst" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
+        android:id="@+id/nav_view"
         android:layout_width="0dp"
         app:itemTextColor="@color/teal_200"
         android:layout_height="50dp"

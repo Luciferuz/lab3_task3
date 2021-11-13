@@ -9,4 +9,5 @@
     <string name="activity_about">Activity about</string>
     <string name="to_about">To activity About</string>
     <string name="content_in_about_activity">Content in about activity</string>
+    <string name="nav_app_bar_navigate_up_description">Navigate up</string>
 </resources>
