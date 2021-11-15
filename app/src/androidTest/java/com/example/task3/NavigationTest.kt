@@ -109,53 +109,53 @@ class NavigationTest {
 
     @Test
     fun fragmentsExists() {
-        //onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToSecond)).perform(click())
-        //onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToThird)).perform(click())
-        //onView(withId(R.id.fragment3)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment3)).check(matches(isDisplayed()))
         openAbout()
         onView(withId(R.id.tvAbout)).check(matches(isDisplayed()))
         onView(withId(R.id.activity_about)).check(matches(isDisplayed()))
         pressBack()
-        //onView(withId(R.id.fragment3)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment3)).check(matches(isDisplayed()))
         pressBack()
-        //onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
         pressBack()
-        //onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
     }
 
     @Test
     fun navigationToAbout() {
-        //onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
         openAbout()
         onView(withId(R.id.tvAbout)).check(matches(isDisplayed()))
         onView(withId(R.id.activity_about)).check(matches(isDisplayed()))
         pressBack()
-        //onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
 
         onView(withId(R.id.bnToSecond)).perform(click())
 
-        //onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
         openAbout()
         onView(withId(R.id.tvAbout)).check(matches(isDisplayed()))
         onView(withId(R.id.activity_about)).check(matches(isDisplayed()))
         pressBack()
-//        onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
 
         onView(withId(R.id.bnToThird)).perform(click())
 
-//        onView(withId(R.id.fragment3)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment3)).check(matches(isDisplayed()))
         openAbout()
         onView(withId(R.id.tvAbout)).check(matches(isDisplayed()))
         onView(withId(R.id.activity_about)).check(matches(isDisplayed()))
         pressBack()
-//        onView(withId(R.id.fragment3)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment3)).check(matches(isDisplayed()))
     }
 
     @Test
     fun upNavigation() {
-//        onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToSecond)).check(matches(isDisplayed()))
 
         openAbout()
@@ -163,11 +163,11 @@ class NavigationTest {
         onView(withId(R.id.activity_about)).check(matches(isDisplayed()))
 
         onView(withContentDescription(R.string.nav_app_bar_navigate_up_description)).perform(click())
-//        onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToSecond)).check(matches(isDisplayed()))
 
         onView(withId(R.id.bnToSecond)).perform(click())
-//        onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToFirst)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToThird)).check(matches(isDisplayed()))
 
@@ -176,12 +176,12 @@ class NavigationTest {
         onView(withId(R.id.activity_about)).check(matches(isDisplayed()))
 
         onView(withContentDescription(R.string.nav_app_bar_navigate_up_description)).perform(click())
-//        onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToFirst)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToThird)).check(matches(isDisplayed()))
 
         onView(withId(R.id.bnToThird)).perform(click())
-        //onView(withId(R.id.fragment3)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment3)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToFirst)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToSecond)).check(matches(isDisplayed()))
 
@@ -190,17 +190,17 @@ class NavigationTest {
         onView(withId(R.id.activity_about)).check(matches(isDisplayed()))
 
         onView(withContentDescription(R.string.nav_app_bar_navigate_up_description)).perform(click())
-        //onView(withId(R.id.fragment3)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment3)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToFirst)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToSecond)).check(matches(isDisplayed()))
 
         onView(withContentDescription(R.string.nav_app_bar_navigate_up_description)).perform(click())
-       // onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToFirst)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToThird)).check(matches(isDisplayed()))
 
         onView(withContentDescription(R.string.nav_app_bar_navigate_up_description)).perform(click())
-       // onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToSecond)).check(matches(isDisplayed()))
 
         try {
@@ -242,7 +242,7 @@ class NavigationTest {
     }
 
     private fun rotation1(){
-      //  onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToSecond)).check(matches(isDisplayed()))
 
         activityRule.scenario.onActivity { activity ->
@@ -250,7 +250,7 @@ class NavigationTest {
         }
         Thread.sleep(1000)
 
-      //  onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment1)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToSecond)).check(matches(isDisplayed()))
 
         activityRule.scenario.onActivity { activity ->
@@ -260,7 +260,7 @@ class NavigationTest {
     }
 
     private fun rotation2(){
-       // onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToFirst)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToThird)).check(matches(isDisplayed()))
 
@@ -269,7 +269,7 @@ class NavigationTest {
         }
         Thread.sleep(1000)
 
-       // onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment2)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToFirst)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToThird)).check(matches(isDisplayed()))
 
@@ -280,7 +280,7 @@ class NavigationTest {
     }
 
     private fun rotation3() {
-//        onView(withId(R.id.fragment3)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment3)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToFirst)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToSecond)).check(matches(isDisplayed()))
 
@@ -289,7 +289,7 @@ class NavigationTest {
         }
         Thread.sleep(1000)
 
-//        onView(withId(R.id.fragment3)).check(matches(isDisplayed()))
+        onView(withId(R.id.fragment3)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToFirst)).check(matches(isDisplayed()))
         onView(withId(R.id.bnToSecond)).check(matches(isDisplayed()))
 
